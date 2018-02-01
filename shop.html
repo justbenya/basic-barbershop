@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Магазин</title>
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/style.css">
+  </head>
+  <body>
+    <header class="main-header">
+      <nav class="navigation">
+        <a class="main-header__logo">
+          <img src="img/other-logo.png" alt="Логотип - Барбершоп Бородинский" width="111" height="24">
+        </a>
+        <ul class="site-navigation">
+          <li class="site-navigation__item"><a href="index.html">Информация</a></li>
+          <li class="site-navigation__item"><a href="#">Новости</a></li>
+          <li class="site-navigation__item"><a href="#">Прайс-лист</a></li>
+          <li class="site-navigation__item"><a class="active">Магазин</a></li>
+          <li class="site-navigation__item"><a href="#">Контакты</a></li>
+        </ul>
+        <ul class="user-navigation">
+          <li class="user-navigation__item"><a href="#">Вход</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <header class="page-header">
+      <h1>Средства для ухода</h1>
+      <ul class="breadcrumbs">
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="shop.html">Магазин</a></li>
+        <li><a href="#">Средство для ухода</a></li>
+        <li>Набор для путешествий «Baxter of California»</li>
+      </ul>
+    </header>
+
+    <main class="container">
+      <aside class="manufacturers">
+        <form action="#" method="get">
+          <div class="manufacturers__brands">
+            <h2>Производители:</h2>
+            <input id="checkbox1" type="checkbox" value="BAXTER OF CALIFORNIA" checked>
+            <label for="checkbox1">BAXTER OF CALIFORNIA</label>
+            <input id="checkbox2" type="checkbox" value="MR NATTY">
+            <label for="checkbox2">MR NATTY</label>
+            <input id="checkbox3" type="checkbox" value="SUAVECITO" checked>
+            <label for="checkbox3">SUAVECITO</label>
+            <input id="checkbox4" type="checkbox" value="MALIN+GOETZ">
+            <label for="checkbox4">MALIN+GOETZ</label>
+            <input id="checkbox5" type="checkbox" value="MURRAY'S">
+            <label for="checkbox5">MURRAY'S</label>
+            <input id="checkbox6" type="checkbox" value="AMERICAN CREW" checked>
+            <label for="checkbox6">AMERICAN CREW</label>
+          </div>
+          <div class="manufacturers__groups">
+            <h2>Группы товаров:</h2>
+            <input id="radio1" name="goods-groups" type="radio" value="БРИТВЕННЫЕ ПРИНАДЛЕЖНОСТИ">
+            <label for="radio1">БРИТВЕННЫЕ ПРИНАДЛЕЖНОСТИ</label>
+            <input id="radio2" name="goods-groups" type="radio" value="СРЕДСТВА ДЛЯ УХОДА" checked>
+            <label for="radio2">СРЕДСТВА ДЛЯ УХОДА</label>
+            <input id="radio3" name="goods-groups" type="radio" value="АКСЕССУАРЫ">
+            <label for="radio3">АКСЕССУАРЫ</label>
+          </div >
+          <button type="submit" name="button">Показать</button>
+        </form>
+      </aside >
+
+      <section class="catalog">
+        <article class="catalog__item">
+          <a href="item.html">
+            <img src="img/product1.png" width="220" height="165" alt="Baxter of California">
+          </a>
+          <p>Набор для путешествий <br> «Baxter of California»</p>
+          <div class="product__buy">
+            <span>2 900 РУБ.</span>
+            <a class="btn" href="#">КУПИТЬ</a>
+          </div>
+        </article>
+
+        <article class="catalog__item">
+          <a href="item.html">
+            <img src="img/product2.png" width="220" height="165" alt="Baxter of California">
+          </a>
+          <p>Увлажняющий кондиционер <br> «Baxter of California»</p>
+          <div class="product__buy">
+            <span>750 РУБ.</span>
+            <a class="btn" href="#">КУПИТЬ</a>
+          </div>
+        </article>
+
+        <article class="catalog__item">
+          <a href="item.html">
+            <img src="img/product3.png" width="220" height="165" alt="SUAVECITO">
+          </a>
+          <p>Гель для волос <br>«SUAVECITO»</p>
+          <div class="product__buy">
+            <span>290 РУБ.</span>
+            <a class="btn" href="#">КУПИТЬ</a>
+          </div>
+        </article>
+
+        <article class="catalog__item">
+          <a href="item.html">
+            <img src="img/product4.png" width="220" height="165" alt="American crew">
+          </a>
+          <p>Глина для укладки волос <br>«American crew»</p>
+          <div class="product__buy">
+            <span>500 РУБ.</span>
+            <a class="btn" href="#">КУПИТЬ</a>
+          </div>
+        </article>
+
+        <article class="catalog__item">
+          <a href="item.html">
+            <img src="img/product5.png" width="220" height="165" alt="Baxter of California">
+          </a>
+          <p>Набор для бритья <br>«Baxter of California»</p>
+          <div class="product__buy">
+            <span>3 900 РУБ.</span>
+            <a class="btn" href="#">КУПИТЬ</a>
+          </div>
+        </article>
+
+        <div class="catalog__pages">
+           <ul>
+             <li><a class="btn" href="#">1</a></li>
+             <li><a class="btn current-page">2</a></li>
+             <li><a class="btn" href="#">3</a></li>
+             <li><a class="btn" href="#">4</a></li>
+           </ul>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>
+        барбершоп «бородинский» <br>
+        адрес: г. санкт-петербург, б. конюшенная, д. 19/8 <br>
+        <a href="#">Как нас найти?</a>
+        телефон: +7 (495) 666-02-66
+      </p>
+      <div class="footer-social">
+        <b>Давайте дружить!</b>
+        <ul class="social-list">
+          <li class="social-item"><a href="#">Вконтакте</a></li>
+          <li class="social-item"><a href="#">Фейсбук</a></li>
+          <li class="social-item"><a href="#">Инстаграм</a></li>
+        </ul>
+      </div>
+      <p class="footer-copyright">Разработано:</p>
+      <a class="btn" href="#">JustBenya</a>
+    </footer>
+  </body>
+</html>
