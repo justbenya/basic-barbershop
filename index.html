@@ -3,8 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>Barbershop</title>
-    <link rel="stylesheet" href="/css/normalize.css">
-    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="main-header">
@@ -32,7 +33,7 @@
         <h2 class="visually-hidden">Преимущества</h2>
         <ul class="advantages__list">
           <li class="advantages__item">
-            <h3>Быстро</h3>
+            <h3 class="advantages__item-title">Быстро</h3>
             <p>
               Мы делаем свою работу быстро!
               Два часа пролетят незаметно и вы
@@ -41,7 +42,7 @@
             </p>
           </li>
           <li class="advantages__item">
-            <h3>Круто</h3>
+            <h3 class="advantages__item-title">Круто</h3>
             <p>
               Забудьте, как вы стриглись раньше.
               Мы сделаем из вас звезду футбола или кино!
@@ -49,7 +50,7 @@
             </p>
           </li>
           <li class="advantages__item">
-            <h3>Дорого</h3>
+            <h3 class="advantages__item-title">Дорого</h3>
             <p>
               Наши мастера — профессионалы своего
               дела и не могут стоить дешево.
@@ -60,99 +61,111 @@
         </ul>
       </section>
 
-      <section class="news">
-        <h2>Новости</h2>
-        <ul class="news__list">
-          <li class="news__item">
-            <p>
-              Нам наконец завезли ягермайстер!
-              Теперь вы можете пропустить
-              стаканчик во время стрижки
-            </p>
-            <time datetime="2018-01-11">11 января</time>
-          </li>
-          <li class="news__item">
-            <p>
-              В нашей команде пополнение,
-              борис «бритва» стригунец, обладaтель
-              множества титулов и наград пополнил
-              наши стройные ряды
-            </p>
-            <time datetime="2018-01-18">18 января</time>
-          </li>
-        </ul>
-        <a class="btn" href="#">Все новости</a>
-      </section>
+      <div class="index-column">
+        <section class="news">
+          <h2>Новости</h2>
+          <ul class="news__list">
+            <li class="news__item">
+              <p>
+                Нам наконец завезли ягермайстер!
+                Теперь вы можете пропустить
+                стаканчик во время стрижки
+              </p>
+              <time datetime="2018-01-11">11 января</time>
+            </li>
+            <li class="news__item">
+              <p>
+                В нашей команде пополнение,
+                борис «бритва» стригунец, обладaтель
+                множества титулов и наград пополнил
+                наши стройные ряды
+              </p>
+              <time datetime="2018-01-18">18 января</time>
+            </li>
+          </ul>
+          <a class="btn" href="#">Все новости</a>
+        </section>
 
-      <section class="gallery">
-        <h2>Фотогалерея</h2>
-        <a href="#">
-          <img src="img/gallery-photo1.png" alt="Наш зал" width="286" height="164">
-        </a>
-        <button class="btn" type="button" name="button">Назад</button>
-        <button class="btn" type="button" name="button">Вперед</button>
-      </section>
+        <section class="gallery">
+          <h2>Фотогалерея</h2>
+          <div class="gallery__content">
+            <a href="#">
+              <img src="img/gallery-photo1.png" alt="Наш зал" width="286" height="164">
+            </a>
+          </div>
+          <button class="btn" type="button" name="button">Назад</button>
+          <button class="btn" type="button" name="button">Вперед</button>
+        </section>
+      </div>
 
-      <section class="contacts">
-        <h2>Контактная информация</h2>
+      <div class="index-column">
+        <section class="contacts">
+          <h2>Контактная информация</h2>
+          <p>
+            барбершоп «бородинский» <br>
+            адрес: г. санкт-петербург, б. конюшенная, д. 19/8 <br>
+            телефон: +7 (495) 666-02-66
+          </p>
+          <p>
+            ВРЕМЯ РАБОТЫ: <br>
+            ПН—ПТ: С 10:00 ДО 22:00 <br>
+            СБ—ВС: С 10:00 ДО 19:00
+          </p>
+          <a class="btn" href="#">Как проехать</a>
+          <a class="btn" href="#">Обратная связь</a>
+        </section>
+
+        <section class="appointment">
+          <h2>Записаться</h2>
+          <p>Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</p>
+          <form class="appointment__form" action="index.html" method="post">
+            <p class="appointment__item">
+              <label for="date">Дата</label>
+              <input type="date" name="date" value="" placeholder="01.01.2018">
+            </p>
+            <p class="appointment__item">
+              <label for="time">Время</label>
+              <input type="time" name="time" value="" placeholder="10:00">
+            </p>
+            <p class="appointment__item">
+              <label for="name">Имя</label>
+              <input type="text" name="name" value="" placeholder="Иван">
+            </p>
+            <p class="appointment__item">
+              <label for="number">Телефон</label>
+              <input type="number" name="phone" value="" placeholder="+7 137 322-50-51">
+            </p>
+            <button class="btn-form" type="submit" name="button">Отправить</button>
+          </form>
+        </section>
+      </div>
+    </main>
+    <footer class="main-footer">
+      <div class="main-footer__contacts">
         <p>
           барбершоп «бородинский» <br>
           адрес: г. санкт-петербург, б. конюшенная, д. 19/8 <br>
+          <a href="#">Как нас найти?</a>
           телефон: +7 (495) 666-02-66
         </p>
-        <p>
-          ВРЕМЯ РАБОТЫ: <br>
-          ПН—ПТ: С 10:00 ДО 22:00 <br>
-          СБ—ВС: С 10:00 ДО 19:00
-        </p>
-        <a class="btn" href="#">Как проехать</a>
-        <a class="btn" href="#">Обратная связь</a>
-      </section>
+      </div>
 
-      <section class="appointment">
-        <h2>Записаться</h2>
-        <p>Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</p>
-        <form class="appointment__form" action="index.html" method="post">
-          <p class="appointment__item">
-            <label for="date">Дата</label>
-            <input type="date" name="date" value="" placeholder="01.01.2018">
-          </p>
-          <p class="appointment__item">
-            <label for="time">Время</label>
-            <input type="time" name="time" value="" placeholder="10:00">
-          </p>
-          <p class="appointment__item">
-            <label for="name">Имя</label>
-            <input type="text" name="name" value="" placeholder="Иван">
-          </p>
-          <p class="appointment__item">
-            <label for="number">Телефон</label>
-            <input type="number" name="phone" value="" placeholder="+7 137 322-50-51">
-          </p>
-          <button class="btn-form" type="submit" name="button">Отправить</button>
-        </form>
-      </section>
-    </main>
-    <footer>
-      <p>
-        барбершоп «бородинский» <br>
-        адрес: г. санкт-петербург, б. конюшенная, д. 19/8 <br>
-        <a href="#">Как нас найти?</a>
-        телефон: +7 (495) 666-02-66
-      </p>
-      <div class="footer-social">
+      <div class="main-footer__social">
         <b>Давайте дружить!</b>
-        <ul class="footer-social__list">
-          <li class="footer-social__item"><a href="#">Вконтакте</a></li>
-          <li class="footer-social__item"><a href="#">Фейсбук</a></li>
-          <li class="footer-social__item"><a href="#">Инстаграм</a></li>
+        <ul class="main-footer__social-list">
+          <li class="main-footer__item"><a href="#">Вконтакте</a></li>
+          <li class="main-footer__item"><a href="#">Фейсбук</a></li>
+          <li class="main-footer__item"><a href="#">Инстаграм</a></li>
         </ul>
       </div>
-      <p class="footer-copyright">Разработано:</p>
-      <a class="btn" href="#">JustBenya</a>
+      <div class="main-footer__copyright">
+        <p>Разработано:</p>
+        <a class="btn" href="#">JustBenya</a>
+      </div>
+
     </footer>
 
-    <section class="modal-login">
+    <section class="modal  modal-login">
       <h2>Личный кабинет</h2>
       <form class="login-form" action="index.html" method="post">
         <p>Введите пожалуйста свой логин и пароль</p>
