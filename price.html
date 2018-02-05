@@ -3,24 +3,24 @@
   <head>
     <meta charset="utf-8">
     <title>Прайс-лист</title>
-    <link rel="stylesheet" href="/css/normalize.css">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
-  <body>
+  <body class="inner-page">
     <header class="main-header">
-      <nav class="navigation">
-        <a class="main-header__logo">
+      <nav class="main-navigation">
+        <a class="main-navigation__logo">
           <img src="img/index-logo.png" alt="Логотип - Барбершоп Бородинский" width="371" height="155">
         </a>
-        <ul class="site-navigation">
-          <li class="site-navigation__item"><a href="#">Информация</a></li>
-          <li class="site-navigation__item"><a href="#">Новости</a></li>
-          <li class="site-navigation__item"><a href="#">Прайс-лист</a></li>
-          <li class="site-navigation__item"><a href="#">Магазин</a></li>
-          <li class="site-navigation__item"><a href="#">Контакты</a></li>
+        <ul class="main-navigation__list">
+          <li class="main-navigation__item"><a href="info.html">Информация</a></li>
+          <li class="main-navigation__item"><a href="news.html">Новости</a></li>
+          <li class="main-navigation__item"><a href="price.html">Прайс-лист</a></li>
+          <li class="main-navigation__item"><a href="shop.html">Магазин</a></li>
+          <li class="main-navigation__item"><a href="contacts.html">Контакты</a></li>
         </ul>
-        <ul class="user-navigation">
-          <li class="user-navigation__item"><a href="#">Вход</a></li>
+        <ul class="main-navigation__user">
+          <li class="main-navigation__user-login"><a href="login.html">Вход</a></li>
         </ul>
       </nav>
     </header>
@@ -78,23 +78,28 @@
         </div>
       </section>
     </main>
-    <footer>
-      <p>
-        барбершоп «бородинский» <br>
-        адрес: г. санкт-петербург, б. конюшенная, д. 19/8 <br>
-        <a href="#">Как нас найти?</a>
-        телефон: +7 (495) 666-02-66
-      </p>
-      <div class="footer-social">
+    <footer class="main-footer">
+      <div class="main-footer__contacts">
+        <p>
+          барбершоп «бородинский» <br>
+          адрес: г. санкт-петербург, б. конюшенная, д. 19/8 <br>
+          <a href="#">Как нас найти?</a>
+          телефон: +7 (495) 666-02-66
+        </p>
+      </div>
+
+      <div class="main-footer__social">
         <b>Давайте дружить!</b>
-        <ul class="social-list">
-          <li class="social-item"><a href="#">Вконтакте</a></li>
-          <li class="social-item"><a href="#">Фейсбук</a></li>
-          <li class="social-item"><a href="#">Инстаграм</a></li>
+        <ul class="main-footer__social-list">
+          <li class="main-footer__item"><a href="#">Вконтакте</a></li>
+          <li class="main-footer__item"><a href="#">Фейсбук</a></li>
+          <li class="main-footer__item"><a href="#">Инстаграм</a></li>
         </ul>
       </div>
-      <p class="footer-copyright">Разработано:</p>
-      <a class="btn" href="#">JustBenya</a>
+      <div class="main-footer__copyright">
+        <p>Разработано:</p>
+        <a class="btn" href="#">JustBenya</a>
+      </div>
     </footer>
   </body>
 </html>
