@@ -19,6 +19,11 @@ a {
   text-decoration: none;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 .btn {
   font: inherit;
   text-align: center;
@@ -36,13 +41,21 @@ a {
   background-color: #663d15;
 }
 
-.visually-hidden {
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
   position: absolute;
+
+  width: 1px;
+  height: 1px;
   padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0 0 0 0);
   border: 0;
+  margin: -1px;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .container {
@@ -83,32 +96,63 @@ a {
 
 .main-navigation__list {
   width: 620px;
-  margin: 0;
-  padding: 0;
-  min-height: 70px;
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
-
-.main-navigation__user {
-  width: 140px;
-}
-
-.main-navigation__item {
-  padding-top: 25px
 }
 
 .main-navigation__list,
 .main-navigation__user {
+  margin: 0;
+  padding: 0;
   list-style: none;
+}
+
+.main-navigation__item-link,
+.main-navigation__login-link {
+  display: block;
+  padding: 25px 20px;
+  vertical-align: middle;
+  color: #ffffff;
+}
+
+.main-navigation__item-link {
+  padding-left: 28px;
+}
+
+.main-navigation__user {
+  display: flex;
+  max-width: 140px;
+}
+
+.main-navigation__login-link {
+  position: relative;
+  padding-left: 50px;
+}
+
+.main-navigation__login-link::before {
+  content: "";
+  position: absolute;
+  top: 28px;
+  left: 21px;
+
+  width: 16px;
+  height: 18px;
+
+  background-image: url("../img/login.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  opacity: 0.3;
+}
+
+.main-navigation__login-link:hover::before,
+.main-navigation__login-link:focus::before,
+.main-navigation__login-link:active::before {
+  opacity: 1;
 }
 
 .main-navigation__item a:hover,
 .main-navigation__item a:focus,
 .main-navigation__user-login a:hover,
-.main-navigation__user-login a:focus
-{
+.main-navigation__user-login a:focus {
   background-color: #242424;
 }
 
