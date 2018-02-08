@@ -164,6 +164,11 @@ input[type="radio"].visually-hidden {
   background-color: #242424;
 }
 
+.main-navigation__item-link--selected {
+  border-bottom: 4px solid #ffffff;
+  padding-bottom: 21px;
+}
+
 .container {
   width: 940px;
   padding: 0 10px;
@@ -519,6 +524,22 @@ input[type="radio"].visually-hidden {
   background-image: url("img/pattern-light.jpg");
   background-position: 0 0;
   background-repeat: repeat;
+}
+
+.inner-page .main-navigation {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+
+  margin-bottom: 50px;
+  background-color: #000000;
+}
+
+.inner-page .main-navigation__logo {
+  width: 111px;
+  height: 24px;
+  order: 0;
+  padding: 23px 20px;
 }
 
 .product__photos-preview {
