@@ -411,6 +411,12 @@ input[type="radio"].visually-hidden {
   display: block;
 }
 
+.main-footer__btn:active,
+.main-footer__btn:hover,
+.main-footer__btn:focus {
+  color: #000000;
+}
+
 .main-footer__contacts {
   width: 320px;
   margin: 0;
