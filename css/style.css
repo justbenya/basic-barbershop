@@ -1,4 +1,5 @@
 body {
+  min-width: 960px;
   margin: 0;
   padding: 0;
 
@@ -369,13 +370,17 @@ input[type="radio"].visually-hidden {
 }
 
 .main-footer {
-  padding: 60px 0;
+  padding-top: 50px;
+  padding-bottom: 60px;
   margin-top: 65px;
   color: #ffffff;
   background-color: #212121;
   background-image: url("../img/pattern-black.png");
   background-position: 0 0;
   background-repeat: repeat;
+
+  font-size: 14px;
+  line-height: 24px;
 }
 
 .social-btn {
@@ -385,11 +390,25 @@ input[type="radio"].visually-hidden {
   width: 43px;
   height: 43px;
   background-color: #000000;
+}
 
+.social-btn:hover,
+.social-btn:focus {
+  background-color: #ffffff;
+}
+
+.social-btn:hover path,
+.social-btn:focus path {
+  fill: #000000;
 }
 
 .main-footer .container {
   display: flex;
+}
+
+.main-footer__btn {
+  margin-right: 0;
+  display: block;
 }
 
 .main-footer__contacts {
@@ -415,7 +434,19 @@ input[type="radio"].visually-hidden {
 }
 
 .main-footer__social-list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 141px;
+  justify-content: space-between;
   list-style: none;
+
+  margin: 0 auto;
+  padding: 0;
+}
+
+.main-footer__social-text {
+  display: block;
+  margin-bottom: 15px;
 }
 
 .main-footer__item {
