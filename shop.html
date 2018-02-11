@@ -39,53 +39,77 @@
       <section class="filters">
         <h2 class="visually-hidden">Фильтры товаров</h2>
         <form action="#" method="get">
-          <fieldset class="manufacturers__brands">
-            <legend>Производители:</legend>
-            <ul>
-              <li class="manufacturers__item">
-                <input id="checkbox1" type="checkbox" value="BAXTER OF CALIFORNIA" checked>
-                <label for="checkbox1">BAXTER OF CALIFORNIA</label>
-              </li>
-              <li class="manufacturers__item">
-                <input id="checkbox2" type="checkbox" value="MR NATTY">
-                <label for="checkbox2">MR NATTY</label>
-              </li>
-              <li class="manufacturers__item">
-                <input id="checkbox3" type="checkbox" value="SUAVECITO" checked>
-                <label for="checkbox3">SUAVECITO</label>
-              </li>
-              <li class="manufacturers__item">
-                <input id="checkbox4" type="checkbox" value="MALIN+GOETZ">
-                <label for="checkbox4">MALIN+GOETZ</label>
-              </li>
-              <li class="manufacturers__item">
-                <input id="checkbox5" type="checkbox" value="MURRAY'S">
-                <label for="checkbox5">MURRAY'S</label>
-              </li>
-              <li class="manufacturers__item">
-                <input id="checkbox6" type="checkbox" value="AMERICAN CREW" checked>
-                <label for="checkbox6">AMERICAN CREW</label>
-              </li>
-            </ul>
-          </fieldset>
-          <fieldset class="manufacturers__groups">
-            <legend>Группы товаров:</legend>
-            <ul>
-              <li class="manufacturers__item">
-                <input id="radio1" name="goods-groups" type="radio" value="БРИТВЕННЫЕ ПРИНАДЛЕЖНОСТИ">
-                <label for="radio1">БРИТВЕННЫЕ ПРИНАДЛЕЖНОСТИ</label>
-              </li>
-              <li class="manufacturers__item">
-                <input id="radio2" name="goods-groups" type="radio" value="СРЕДСТВА ДЛЯ УХОДА" checked>
-                <label for="radio2">СРЕДСТВА ДЛЯ УХОДА</label>
-              </li>
-              <li class="manufacturers__item">
-                <input id="radio3" name="goods-groups" type="radio" value="АКСЕССУАРЫ">
-                <label for="radio3">АКСЕССУАРЫ</label>
-              </li>
-            </ul>
-          </fieldset >
-          <button type="submit" name="button">Показать</button>
+          <h2 class="heading heading--level-2">Производители:</h2>
+          <ul class="checkbox-list">
+            <li class="checkbox-list__item">
+              <label class="checkbox">
+                <input class="visually-hidden  checkbox__input" type="checkbox" checked>
+                <span class="checkbox__indicator"></span>
+                BAXTER OF CALIFORNIA
+              </label>
+            </li>
+            <li class="checkbox-list__item">
+              <label class="checkbox">
+                <input class="visually-hidden  checkbox__input" type="checkbox" value="MR NATTY">
+                <span class="checkbox__indicator"></span>
+                Mr Natty
+              </label>
+            </li>
+            <li class="checkbox-list__item">
+              <label class="checkbox">
+                <input class="visually-hidden  checkbox__input" type="checkbox" value="SUAVECITO" checked>
+                <span class="checkbox__indicator"></span>
+                Suavecito
+              </label>
+            </li>
+            <li class="checkbox-list__item">
+              <label class="checkbox">
+                <input class="visually-hidden  checkbox__input" type="checkbox" value="MALIN+GOETZ" checked="checked">
+                <span class="checkbox__indicator"></span>
+                MALIN+GOETZ
+              </label>
+            </li>
+            <li class="checkbox-list__item">
+              <label class="checkbox">
+                <input class="visually-hidden  checkbox__input" type="checkbox" value="MURRAY'S">
+                <span class="checkbox__indicator"></span>
+                MURRAY'S
+              </label>
+            </li>
+            <li class="checkbox-list__item">
+              <label class="checkbox">
+                <input class="visually-hidden  checkbox__input" type="checkbox" value="AMERICAN CREW" checked>
+                <span class="checkbox__indicator"></span>
+                AMERICAN CREW
+              </label>
+            </li>
+          </ul>
+
+          <h2 class="heading heading--level-2">Группы товаров:</h2>
+          <ul class="checkbox-list">
+            <li class="checkbox-list__item">
+              <label class="radiobox">
+                <input class="visually-hidden  radiobox__input" name="radios" type="radio" >
+                <span class="radiobox__indicator"></span>
+                БРИТВЕННЫЕ ПРИНАДЛЕЖНОСТИ
+              </label>
+            </li>
+            <li class="checkbox-list__item">
+              <label class="radiobox">
+                <input class="visually-hidden  radiobox__input" name="radios" type="radio" checked>
+                <span class="radiobox__indicator"></span>
+                СРЕДСТВА ДЛЯ УХОДА
+              </label>
+            </li>
+            <li class="checkbox-list__item">
+              <label class="radiobox">
+                <input class="visually-hidden  radiobox__input" name="radios" type="radio">
+                <span class="radiobox__indicator"></span>
+                АКСЕССУАРЫ
+              </label>
+            </li>
+          </ul>
+          <button class="btn" type="submit" name="button">Показать</button>
         </form>
       </section>
 
@@ -93,73 +117,85 @@
         <h2 class="visually-hidden">Список средств для ухода</h2>
         <ul class="catalog__list">
           <li class="catalog__item">
-            <a href="item.html">
-              <img src="img/product1.png" width="220" height="165" alt="Baxter of California">
-              <p>Набор для путешествий <br> «Baxter of California»</p>
-            </a>
-            <div class="buy-btn">
-              <span class="buy-btn__text">2 900 РУБ.</span>
-              <a class="btn  btn--position" href="#">КУПИТЬ</a>
+            <div class="custom-photo">
+              <a class="catalog__url" href="item.html">
+                <img src="img/product1.png" width="220" height="165" alt="Baxter of California">
+                <p class="catalog__text">Набор для путешествий <br> «Baxter of California»</p>
+              </a>
+              <div class="buy-btn   buy-btn--product">
+                <span class="buy-btn__text  buy-btn__text--product">2 900 РУБ.</span>
+                <a class="btn  btn--position  btn--product" href="#">КУПИТЬ</a>
+              </div>
             </div>
           </li>
           <li class="catalog__item">
-            <a href="item.html">
-              <img src="img/product2.png" width="220" height="165" alt="Baxter of California">
-              <p>Увлажняющий кондиционер <br> «Baxter of California»</p>
-            </a>
-            <div class="buy-btn">
-              <span class="buy-btn__text">750 РУБ.</span>
-              <a class="btn  btn--position" href="#">КУПИТЬ</a>
+            <div class="custom-photo">
+              <a class="catalog__url" href="item.html">
+                <img src="img/product2.png" width="220" height="165" alt="Baxter of California">
+                <p class="catalog__text">Увлажняющий кондиционер <br> «Baxter of California»</p>
+              </a>
+              <div class="buy-btn   buy-btn--product">
+                <span class="buy-btn__text  buy-btn__text--product">750 РУБ.</span>
+                <a class="btn  btn--position  btn--product" href="#">КУПИТЬ</a>
+              </div>
             </div>
           </li>
           <li class="catalog__item">
-            <a href="item.html">
-              <img src="img/product3.png" width="220" height="165" alt="SUAVECITO">
-              <p>Гель для волос <br>«SUAVECITO»</p>
-            </a>
-            <div class="buy-btn">
-              <span class="buy-btn__text">290 РУБ.</span>
-              <a class="btn  btn--position" href="#">КУПИТЬ</a>
+            <div class="custom-photo">
+              <a class="catalog__url" href="item.html">
+                <img src="img/product3.png" width="220" height="165" alt="SUAVECITO">
+                <p class="catalog__text">Гель для волос <br>«SUAVECITO»</p>
+              </a>
+              <div class="buy-btn   buy-btn--product">
+                <span class="buy-btn__text  buy-btn__text--product">290 РУБ.</span>
+                <a class="btn  btn--position  btn--product" href="#">КУПИТЬ</a>
+              </div>
             </div>
           </li>
           <li class="catalog__item">
-            <a href="item.html">
-              <img src="img/product4.png" width="220" height="165" alt="American crew">
-              <p>Глина для укладки волос <br>«American crew»</p>
-            </a>
-            <div class="buy-btn">
-              <span class="buy-btn__text">500 РУБ.</span>
-              <a class="btn  btn--position" href="#">КУПИТЬ</a>
+            <div class="custom-photo">
+              <a class="catalog__url" href="item.html">
+                <img src="img/product4.png" width="220" height="165" alt="American crew">
+                <p class="catalog__text">Гель для волос <br>«SUAVECITO»</p>
+              </a>
+              <div class="buy-btn   buy-btn--product">
+                <span class="buy-btn__text  buy-btn__text--product">500 РУБ.</span>
+                <a class="btn  btn--position  btn--product" href="#">КУПИТЬ</a>
+              </div>
             </div>
           </li>
           <li class="catalog__item">
-            <a href="item.html">
-              <img src="img/product5.png" width="220" height="165" alt="Baxter of California">
-              <p>Набор для бритья <br>«Baxter of California»</p>
-            </a>
-            <div class="buy-btn">
-              <span class="buy-btn__text">500 РУБ.</span>
-              <a class="btn  btn--position" href="#">КУПИТЬ</a>
+            <div class="custom-photo">
+              <a class="catalog__url" href="item.html">
+                <img src="img/product5.png" width="220" height="165" alt="Baxter of California">
+                <p class="catalog__text">Набор для бритья <br>«Baxter of California»</p>
+              </a>
+              <div class="buy-btn   buy-btn--product">
+                <span class="buy-btn__text  buy-btn__text--product">500 РУБ.</span>
+                <a class="btn  btn--position  btn--product" href="#">КУПИТЬ</a>
+              </div>
             </div>
           </li>
           <li class="catalog__item">
-            <a href="item.html">
-              <img src="img/product6.png" width="220" height="165" alt="Baxter of California">
-              <p>Набор для бритья <br>«Baxter of California»</p>
-            </a>
-            <div class="buy-btn">
-              <span class="buy-btn__text">3 900 РУБ.</span>
-              <a class="btn  btn--position" href="#">КУПИТЬ</a>
+            <div class="custom-photo">
+              <a class="catalog__url" href="item.html">
+                <img src="img/product6.png" width="220" height="165" alt="Baxter of California">
+                <p class="catalog__text">Набор для бритья <br>«Baxter of California»</p>
+              </a>
+              <div class="buy-btn   buy-btn--product">
+                <span class="buy-btn__text  buy-btn__text--product">3 900 РУБ.</span>
+                <a class="btn  btn--position  btn--product" href="#">КУПИТЬ</a>
+              </div>
             </div>
           </li>
         </ul>
 
         <div class="catalog__pages">
-           <ul>
-             <li><a class="btn" href="#">1</a></li>
-             <li><a class="btn current-page">2</a></li>
-             <li><a class="btn" href="#">3</a></li>
-             <li><a class="btn" href="#">4</a></li>
+           <ul class="catalog__list">
+             <li class="catalog__item  catalog__item--page"><a class="btn  btn--page" href="#">1</a></li>
+             <li class="catalog__item  catalog__item--page"><a class="btn btn--page  btn--current-page">2</a></li>
+             <li class="catalog__item  catalog__item--page"><a class="btn  btn--page" href="#">3</a></li>
+             <li class="catalog__item  catalog__item--page"><a class="btn  btn--page" href="#">4</a></li>
            </ul>
         </div>
       </section>
