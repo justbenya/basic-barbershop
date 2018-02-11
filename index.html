@@ -190,28 +190,28 @@
     </footer>
 
     <section class="modal  modal-login">
-      <h2>Личный кабинет</h2>
-      <form class="login-form" action="index.html" method="post">
-        <p>Введите пожалуйста свой логин и пароль</p>
-        <p>
-          <label class="visually-hidden" for="user-login">Логин:</label>
-          <input type="user-login" name="login" value="" placeholder="Логин">
+      <h2 class="heading  heading--level-2  modal__heading">Личный кабинет</h2>
+      <p class="modal__description">Введите пожалуйста свой логин и пароль</p>
+      <form class="modal__login-form" action="index.html" method="post">
+        <p class="modal__item">
+          <label class="visually-hidden" for="text">Логин:</label>
+          <input class="login-icon-user" type="text" name="login" value="" placeholder="Логин">
         </p>
-        <p>
+        <p class="modal__item">
           <label class="visually-hidden" for="password">Пароль:</label>
-          <input type="password" name="password" value="" placeholder="Пароль">
+          <input class="login-icon-psw" type="password" name="password" value="" placeholder="Пароль">
         </p>
-
-        <p class="login-password-info">
-          <label class="login-checkbox">
+        <p class="modal-login__password-info">
+          <label class="modal-login__checkbox">
             <input type="checkbox" name="remember" class="visually-hidden" value="">
+            <span class="modal-login__checkbox-indicator"></span>
             Запомните меня
           </label>
           <a class="restore" href="#">Я забыл пароль!</a>
         </p>
-        <button class="btn" type="submit">Войти</button>
+        <button class="btn  btn--full" type="submit">Войти</button>
       </form>
-      <button class="modal-close">Закрыть</button>
+      <button class="modal__close">Закрыть</button>
     </section>
 
     <section class="modal modal-map">
@@ -219,7 +219,7 @@
       <p>
         <img src="img/map.png" width="766" height="560" alt="г. санкт-петербург, б. конюшенная, д. 19/8">
       </p>
-      <button class="modal-close">Закрыть</button>
+      <button class="modal__close">Закрыть</button>
     </section>
   </body>
 </html>
